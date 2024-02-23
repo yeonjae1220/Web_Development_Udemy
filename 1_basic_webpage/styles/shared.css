@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    background-color: rgb(233, 215, 207);
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: blueviolet;
+}
+
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* #goal-1 {
+    font-size: 30px;
+    color: #999999;
+}
+
+#goal-2 {
+    font-size: 30px;
+    color: green;
+} */
+
