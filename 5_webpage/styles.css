@@ -16,7 +16,9 @@ label {
     display: block;
 }
 
-input {
+input,
+textarea,
+select {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
@@ -28,7 +30,8 @@ input {
 
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     background-color: rgb(219 190 253);
     color: rgb(32, 5, 63);
     border-color: rgb(32, 5, 63);
@@ -48,4 +51,13 @@ button {
 button:hover {
     background-color: rgb(52, 14, 95);
     border-color: rgb(52, 14, 95);
+}
+
+.form-control-inline {
+    display: flex;   
+}
+
+.form-control-inline input {
+    width: auto;
+    margin-right: 0.5rem;
 }
