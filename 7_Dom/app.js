@@ -1,18 +1,22 @@
-// console.dir(window.document);
-// document.body.children[1].children[0].href = 'https://google.com';
+let paragraphElement = document.querySelector('p')
+// document.body.firstElementChild 이렇게 해도 된다
 
-let anchorElement = document.getElementById('external-link');
-anchorElement.href = 'https://google.com';
+function changeParagraphText(event) {
+    paragraphElement.textContent = 'Cliked!';
+    console.log('Paragraph cliked!');
+    console.log(event)
+}
 
-anchorElement.href = document.querySelector('#external-id');
-anchorElement.href = 'http://academind.com';
+paragraphElement.addEventListener('click', changeParagraphText);
 
-// ADD AN ELEMENT
-let newAnchorElement = document.createElement('a');
-//newAnchorElement.hrep = 'https://google.com'; ㅋㅋ 오타 hrep 찾기 힘드네
-newAnchorElement.href = 'https://google.com';
-newAnchorElement.textContent = 'This leads to Google';
+let inputElement = document.querySelector('input')
 
-let firstParagraph = document.querySelector('p');
+function retreiveUserInput(event) {
+    //let enteredText = inputElement.value;
+    //let enteredText = event.target.value;
+    let enteredText = event.data;
+    console.log(enteredText);
+    //console.log(event);
+}
 
-firstParagraph.append(newAnchorElement);
+inputElement.addEventListener('input', retreiveUserInput)
