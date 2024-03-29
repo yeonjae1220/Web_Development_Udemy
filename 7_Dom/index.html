@@ -5,17 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advanced JavaScript</title>
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="loop.js" defer></script>
   </head>
   <body>
+    <form>
+      <div class="control">
+        <label for="product-name">Product Name</label>
+        <input type="text" id="product-name" name="product-name" maxlength="60">
+        <span id="charcount">
+          <span id="remaining-chars">60</span>/60
+        </span>
+      </div>
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
     
-    <p>Click me!</p>
+  </body>
+</html>
+
+
+
+<!-- <p>Click me!</p>
     <input type="text">
-    <!-- <h1 id="first-title">Hi there!</h1>
+    <h1 id="first-title">Hi there!</h1>
     <p>I'm new!</p>
     <p class="highlighted-paragraph">
       This is a
-      <a id="external-link" href="#">link</a> -->
-    </p>
-  </body>
-</html>
+      <a id="external-link" href="#">link</a>
+    </p> -->
